@@ -1,0 +1,16 @@
+html {
+    background:#333;
+    background-image:url('/bower_components/bootstrap/dist/images/phone1.png');
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+body {
+    background:transparent;
+    margin-top:80px;
+}
+
+.navbar-fixed-top {
+    position:fixed;
+    width:100%;
+}
