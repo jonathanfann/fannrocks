@@ -14,3 +14,24 @@ body {
     position:fixed;
     width:100%;
 }
+
+.circle-madness {
+    background:rgba(2, 72, 132,0.8);
+    max-width:80%;
+    width:600px;
+    height:600px;
+    max-height:80vh;
+    margin:0 auto;
+    border-radius:50%;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+.circle-madness h1 {
+    font-size:3em;
+    position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+    
