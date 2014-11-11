@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,600,300italic,600italic);
+
 html {
     background:#333;
     background-image:url('/bower_components/bootstrap/dist/images/phone1.png');
@@ -7,7 +9,7 @@ html {
 
 body {
     background:transparent;
-    margin-top:80px;
+    font-family: 'Josefin Sans', 'Open Sans', Arial, sans-serif;
 }
 
 .navbar-fixed-top {
@@ -18,20 +20,42 @@ body {
 .circle-madness {
     background:rgba(2, 72, 132,0.8);
     max-width:80%;
+    max-height:80%;
     width:600px;
     height:600px;
-    max-height:80vh;
     margin:0 auto;
     border-radius:50%;
     color:#fff;
     text-align:center;
     padding:20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.circle-madness h1 {
+#first {
+
+}
+
+.innertube {
     font-size:3em;
     position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+#slide {
+    height:100vh;
+    width:100%;
+}
+
+.slide1 {
+    background:transparent;
+    background-size:cover;
+}
+
+.slide2 {
+    background-image:url('/bower_components/bootstrap/dist/images/phone2.jpg');
+    background-size:cover;
 }
     

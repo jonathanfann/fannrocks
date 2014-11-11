@@ -64,23 +64,51 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div id="slide" class="slide1">
 
       <!-- Main component for a primary marketing message or call to action -->
+      <div class="circle-madness" id="first">
+        <div class="innertube"><h1>Mobilia Consulting</h1>
+          <a class="btn btn-md btn-info" href="#next">Click it or ticket</a>
+          </div>
+        </div>
+      </div>
+      <span id="next"></span>  
+        <div id="slide" class="slide2">
+      <!-- Main component for a primary marketing message or call to action -->
       <div class="circle-madness">
-        <h1>Mobilia Consulting</h1>
+        <h1 class="innertube">We'll save you some $$$ fo sho.</h1>
         
       </div>
 
-    </div> <!-- /container -->
+    </div>
+      
+      
+      
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="/bower_compontents/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+      <script type="text/javascript">
+      $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+      </script>
   </body>
 </html>
